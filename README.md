@@ -1,23 +1,11 @@
----
-title: Flask
-description: A popular minimal server framework for Python
-tags:
-  - python
-  - flask
----
+# Meme Page App with Flask
 
-# Python Flask Example
+This is a simple meme webpage that fetches memes from an API endpoint and displays them on a webpage.
 
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
+## Features
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
+- Displays a **random meme** every time the page is refreshed.
 
-## ✨ Features
+- User can click on the "Get Another" button multiple times to get another random meme.
 
-- Python
-- Flask
-
-## 💁‍♀️ How to use
-
-- Install Python requirements `pip install -r requirements.txt`
-- Start the server for development `python3 main.py`
+Happy Meming!
