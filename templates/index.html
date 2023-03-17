@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta http-equiv="refresh" content="30;url=http://127.0.0.1:5000/" /> -->
-    <style>
-      body {
-        background-color: #000000;
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-attachment: fixed;
-      }
-      h1 {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        color: #ffffff;
-        background-color: #000000;
-      }
-      p {
-        text-align: center;
-        font-family: Georgia, serif;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: normal;
-        color: #ffffff;
-        background-color: #000000;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>A website to gather some memes!</h1>
-    <p>Here is your meme!</p>
-    <p><img src="{{meme_pic}}" /></p>
-    <p>Current subreddit: "{{subreddit}}"</p>
+  <body class="bg-black">
+    <div class="text-center dark:text-white font-bold">
+      <h1 class="text-4xl">A website to gather some memes!</h1>
+      <p class="text-2xl mt-4 font-['SairaCondensed']">Here is your meme!</p>
+    </div>
+    <div>
+      <img class="w-96 pt-8 pb-4 mx-auto" src="{{meme_pic}}" alt="meme" />
+      <p class="text-center dark:text-white text-2xl">
+        Current subreddit: "{{subreddit}}"
+      </p>
+    </div>
   </body>
 </html>
